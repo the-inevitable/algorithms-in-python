@@ -23,7 +23,7 @@ def binary_search(sorted_list, item):
         guess = sorted_list[mid]
 
         if guess == item:
-            print(f'Found element at {mid} index. It took {attempts} attempts.')
+            print(f'Found item << {item} >> at index {mid}. It took {attempts} attempts.')
             return mid
         elif guess < item:
             low = mid + 1
@@ -35,10 +35,11 @@ def binary_search(sorted_list, item):
 
 # Test data.
 test_list_int = list(range(200, 1232381))
-test_list_str = ['Brian', 'Joe', 'Lois', 'Meg', 'Peter', 'Stewie']
+test_list_str = ['Brian', 'Joe', 'Lois', 'Meg', 'Peter', 'Stevie']
 
 # Testing the algorithm.
 binary_search(test_list_int, 9999)
-binary_search(test_list_str, 'Stewie')
+# Found item << 9999 >> at index 9799. It took 19 attempts.
 
-
+binary_search(test_list_str, 'Stevie')
+# Found item << Stewie >> at index 5. It took 3 attempts.
