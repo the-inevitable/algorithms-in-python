@@ -1,2 +1,2 @@
-Beautiful journey of learning algorithms and data structures.
+A beautiful journey of learning algorithms and data structures.
 
