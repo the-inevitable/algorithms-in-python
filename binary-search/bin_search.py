@@ -7,6 +7,8 @@ number of steps to find an element in a sorted list of n elements would be:
 
 E.g. for a list of 1000 elements it would take no more than 10 steps.
 2**10 = 1024 and 1024 > 1000 is True
+
+O(log n) complexity
 """
 
 
@@ -31,8 +33,12 @@ def binary_search(sorted_list, item):
             return None
 
 
-test_list = list(range(200, 1232381))
+# Test data.
+test_list_int = list(range(200, 1232381))
+test_list_str = ['Brian', 'Joe', 'Lois', 'Meg', 'Peter', 'Stewie']
 
-idx = binary_search(test_list, 9999)
+# Testing the algorithm.
+binary_search(test_list_int, 9999)
+binary_search(test_list_str, 'Stewie')
 
 
