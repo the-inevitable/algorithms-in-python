@@ -20,9 +20,8 @@ def binary_search(sorted_list, item):
         attempts += 1
 
         mid = (low + high) // 2
-        guess = sorted_list[mid]
 
-        if guess == item:
+        if (guess := sorted_list[mid]) == item:
             print(f'Found item << {item} >> at index {mid}. It took {attempts} attempts.')
             return mid
         elif guess < item:

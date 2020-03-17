@@ -8,7 +8,7 @@ So we go through N elements of a list N times. To be precise, it's 1/2 * N, but 
 
 
 def find_smallest(lst):
-    # Store smallest number and its index.
+    # Store the smallest number and its index.
     smallest = lst[0]
     smallest_idx = 0
 
