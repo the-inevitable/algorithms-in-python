@@ -1,8 +1,6 @@
 """
 Divide and Conquer strategy.
 """
-import random
-
 
 def quicksort(lst):
     # Base case.
@@ -14,11 +12,11 @@ def quicksort(lst):
         # Recursive case.
 
         # Pick a pivot.
-        pivot = random.choice(lst)
+        pivot = lst[0]
 
         # Partition the list.
-        smaller_lst = [x for x in lst if x < pivot]
-        larger_lst = [x for x in lst if x > pivot]
+        smaller_lst = [x for x in lst[1:] if x <= pivot]
+        larger_lst = [x for x in lst[1:] if x > pivot]
 
         # Call quicksort recursively on each of the lists.
         # They will eventually reach the base case.
