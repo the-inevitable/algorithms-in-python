@@ -41,4 +41,4 @@ binary_search(test_list_int, 9999)
 # Found item << 9999 >> at index 9799. It took 19 attempts.
 
 binary_search(test_list_str, 'Stevie')
-# Found item << Stewie >> at index 5. It took 3 attempts.
+# Found item << Stevie >> at index 5. It took 3 attempts.
