@@ -25,15 +25,23 @@ Algorithm pseudo code:
 graph = {}
 
 graph['start'] = {}
-graph['start']['a'] = 6
+graph['start']['a'] = 5
 graph['start']['b'] = 2
 
 graph['a'] = {}
-graph['a']['finish'] = 1
+graph['a']['c'] = 4
+graph['a']['d'] = 2
 
 graph['b'] = {}
-graph['b']['a'] = 3
-graph['b']['finish'] = 5
+graph['b']['a'] = 8
+graph['b']['d'] = 7
+
+graph['c'] = {}
+graph['c']['finish'] = 3
+graph['c']['d'] = 6
+
+graph['d'] = {}
+graph['d']['finish'] = 1
 
 graph['finish'] = {}
 
@@ -44,6 +52,8 @@ infinity = float('inf')
 costs = {}
 costs['a'] = 6
 costs['b'] = 2
+costs['c'] = infinity
+costs['d'] = infinity
 costs['finish'] = infinity
 
 
@@ -95,4 +105,5 @@ def compose_shortest_path(dct):
 
 # Test the Dijkstra's algorithm.
 dijkstras_algo()
-print(' --> '.join(compose_shortest_path(parents)))  # start --> b --> a --> finish
+print(' --> '.join(compose_shortest_path(parents)))  # start --> a --> d --> finish
+
