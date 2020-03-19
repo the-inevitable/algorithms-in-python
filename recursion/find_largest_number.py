@@ -27,10 +27,10 @@ def find_largest_number_recursively(lst):
 
 
 # Test data.
-test_lst = [20, 27, 74, 76, 10, 81, 21, 85, 46, 60, 78, 43]
+test_lst = [20, 27, 74, 76, 10, 81, 21, -85, 46, 60, 78, 43]
 
 # Test find_largest_number_in_a_list.
-print(find_largest_number_in_a_list(test_lst))    # 85
+print(find_largest_number_in_a_list(test_lst))    # 81
 
 # Test find_largest_number_recursively.
-print(find_largest_number_recursively(test_lst))  # 85
+print(find_largest_number_recursively(test_lst))  # 81
