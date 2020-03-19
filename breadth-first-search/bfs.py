@@ -1,5 +1,5 @@
 """
-Breadth-First Search algorithm runs on graphs.
+Breadth-First Search algorithm runs on unweighted graphs.
 """
 from collections import deque
 
