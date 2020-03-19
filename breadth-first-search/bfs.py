@@ -11,7 +11,6 @@ def bfs(name):
     while search_queue:
         if (person := search_queue.popleft()) not in searched:
             if is_seller(person):
-                print(searched)
                 return person
             else:
                 search_queue.extend(graph[person])
