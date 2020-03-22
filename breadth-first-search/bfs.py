@@ -1,5 +1,7 @@
 """
 Breadth-First Search algorithm runs on unweighted graphs.
+
+Complexity of the BFS is O(V + E), where V is the number of vertices, and E is the number of Edges.
 """
 from collections import deque
 
