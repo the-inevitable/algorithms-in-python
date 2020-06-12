@@ -1,4 +1,4 @@
-A beautiful journey of learning algorithms and data structures.
+A beautiful journey of learning new algorithms and data structures.
 
 All scripts are written in Python 3.8.
 
